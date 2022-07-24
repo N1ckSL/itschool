@@ -19,27 +19,6 @@ export const Phalf = styled(P)`
   padding-bottom: 4.8rem;
 `;
 
-export const PregatireContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "programare image"
-    "webdev image";
-`;
-
-export const Programare = styled.div`
-  grid-area: programare;
-  padding-bottom: 4.8rem;
-`;
-
-export const WebDev = styled.div`
-  grid-area: webdev;
-  padding-bottom: 4.8rem;
-`;
-
 export const ImageWrapper = styled.div`
   position: absolute;
   width: 100px;
@@ -58,8 +37,26 @@ export const Alina = styled.div`
   display: block;
 `;
 
+export const PregatireContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+`;
+
+export const PregatireWrapper = styled.div`
+  width: 50%;
+`;
+
+export const TechWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4.8rem;
+  gap: 0.8rem;
+`;
+
 export const TechIcon = styled.div`
   display: flex;
+  flex-direction: row;
   justify-content: Center;
   height: 6.4rem;
   width: 6.4rem;

@@ -7,9 +7,9 @@ import {
   ImageWrapper,
   Phalf,
   PregatireContainer,
-  Programare,
+  PregatireWrapper,
   TechIcon,
-  WebDev,
+  TechWrapper,
 } from "./Pregatire.style";
 
 const tehnologii = [
@@ -17,52 +17,76 @@ const tehnologii = [
     title: "Programare",
     tech: {
       name: ["Python,", "Java", "C++", "Git"],
-      img: ["python", "java", "cpp", "git"]
+      img: ["python", "java", "cpp", "git"],
     },
+    component: "Programare",
   },
   {
     title: "Web Development",
     tech: {
-      name: ["html,", "css", "javascript", "react", "php", "laravel", "c-sharp", "dot NET"],
-      img: ["html", "css", "javascript", "react", "php", "laravel", "c-sharp", "net"]
+      name: [
+        "HTML5",
+        "CSS",
+        "JavaScript",
+        "React",
+        "PHP",
+        "Laravel",
+        "C#",
+        ".NET",
+      ],
+      img: [
+        "html5",
+        "css3",
+        "javascript",
+        "react",
+        "php",
+        "laravel",
+        "c-sharp",
+        "net",
+      ],
     },
+    component: "WebDev",
   },
   {
     title: "Design",
     tech: {
-      name: ["photoshop,", "illustrator", "invision", "miro", "zeplin"],
-      img: ["photoshop", "illustrator", "invision", "miro", "zeplin"]
+      name: ["Photoshop,", "Illustrator", "Invision", "Miro", "Zeplin"],
+      img: ["photoshop", "illustrator", "invision", "miro", "zeplin"],
     },
+    component: "Design",
   },
   {
     title: "DevOps",
     tech: {
-      name: ["docker,", "jenkins", "ansible", "aws", "terraform"],
-      img: ["docker", "jenkins", "ansible", "aws", "terraform"]
+      name: ["Docker,", "Jenkins", "Ansible", "AWS", "Terraform"],
+      img: ["docker", "jenkins", "ansible", "aws", "terraform"],
     },
+    component: "Devops",
   },
   {
     title: "Skill-up",
     tech: {
-      name: ["sql,", "mysql", "scrum", "linux"],
-      img: ["sql", "mysql", "scrum", "linux"]
+      name: ["SQL,", "MySQL", "SCRUM", "Linux"],
+      img: ["sql", "mysql", "agile", "linux"],
     },
+    component: "Skillup",
   },
   {
     title: "Testare",
     tech: {
-      name: ["testare software,", "selenium"],
-      img: ["testare", "selenium"]
+      name: ["Testare software,", "Selenium"],
+      img: ["testare", "selenium"],
     },
+    component: "Testare",
   },
   {
     title: "Alte Cursuri",
     tech: {
       name: ["Excel,"],
-      img: ["excel"]
+      img: ["excel"],
     },
-  }
- 
+    component: "Altele",
+  },
 ];
 
 export const Pregatire = () => {
@@ -83,24 +107,24 @@ export const Pregatire = () => {
         studiate în cadrul cursurilor IT School:
       </Phalf>
       <PregatireContainer>
-        {tehnologii.map((tehnologie, index) => (
-          <Programare key={index}>
-            <TechIcon>
-              {/* <img src={require(`./img/${partner.img}.svg`).default.src} alt={partner.name} /> */}
-              {/* <img
-                src={require(`./img/${tehnologie.tech.img}.svg`).default.src}
-                alt={tehnologie.tech.name}
-              /> */}
-            </TechIcon>
-          </Programare>
-        ))}
-        <Programare>
-          <H5>Programare</H5>
-        </Programare>
-        <WebDev></WebDev>
         <ImageWrapper>
           <Alina />
         </ImageWrapper>
+        {tehnologii.map((tehnologie, index) => (
+          <PregatireWrapper key={index}>
+            <H5 mb={"1.5rem"}>{tehnologie.title}</H5>
+            <TechWrapper>
+              {tehnologie.tech.img.map((logo, idx) => (
+                <TechIcon key={idx}>
+                  <img
+                    src={require(`./img/${logo}.svg`).default.src}
+                    alt={tehnologie.title}
+                  />
+                </TechIcon>
+              ))}
+            </TechWrapper>
+          </PregatireWrapper>
+        ))}
       </PregatireContainer>
     </Container>
   );

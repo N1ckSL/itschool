@@ -3,6 +3,7 @@ import { Hero } from "../components/sections/_home/Hero/Hero";
 import { LandingLayout } from "../components/Layout/LandingLayout";
 import { Courses } from "../components/sections/_home/Carrousel/Courses";
 import { Pregatire } from "../components/sections/_home/Pregatire/Pregatire";
+import { Despre } from "../components/sections/_home/Despre/Despre";
 
 const Home = () => {
   return (
@@ -16,7 +17,7 @@ const Home = () => {
         <Hero />
         <Courses />
         <Pregatire />
-        <section>landing pregatire angajare</section>
+        <Despre />
         <section>landing career steps</section>
         <section>landing about</section>
         <section>lanidng testimoniale</section>

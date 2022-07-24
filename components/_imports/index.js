@@ -13,6 +13,8 @@ import microsoft from "../../public/img/microsoft.svg";
 import adobe from "../../public/img/adobe.svg";
 import its from "../../public/img/its.svg";
 
+import despre from "../../public/img/about-image.png"
+
 export const images = {
   preloader: preloader.src,
 
@@ -29,6 +31,8 @@ export const images = {
   microsoft: microsoft.src,
   adobe: adobe.src,
   its: its.src,
+
+  despre: despre.src
 };
 
 // eu as importa in fiecare fisier imaginea, unde este nevoie
