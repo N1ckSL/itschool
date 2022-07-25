@@ -40,17 +40,17 @@ export const Wrapper = styled.div`
 
 export const Title = styled.h1`
   font-size: 4.8rem;
-  font-family: Asap. sans-serif;
+  font-family: "Asap", sans-serif;
   line-height: 1.2;
   font-weight: 500;
-  text-alight: center;
+  text-align: center;
   color: white;
 `;
 
 export const Subtitle = styled.p`
   font-size: 1.6rem;
   color: white;
-  font-family: Asap, sans-serif;
+  font-family: "Asap", sans-serif;
   text-align: center;
   line-height: 1.5;
 `;

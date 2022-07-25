@@ -1,10 +1,10 @@
-import { LandingLayout } from "../components/Layout/LandingLayout";
+import { Layout } from "../components/Layout/Layout";
 import { CoursesHero } from "../components/sections/_cursuri/Hero/CoursesHero";
 
 export default function CursuriPage() {
   return (
-    <LandingLayout>
+    <Layout>
       <CoursesHero />
-    </LandingLayout>
+    </Layout>
   );
 }

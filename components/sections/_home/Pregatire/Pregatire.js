@@ -1,3 +1,5 @@
+import { tehnologii } from "../../../consts/data";
+import { images } from "../../../_imports";
 import { H5 } from "../../../_UI/Typography/Title";
 import { Pwhite } from "../Carrousel/Courses.style";
 import {
@@ -12,87 +14,10 @@ import {
   TechWrapper,
 } from "./Pregatire.style";
 
-const tehnologii = [
-  {
-    title: "Programare",
-    tech: {
-      name: ["Python,", "Java", "C++", "Git"],
-      img: ["python", "java", "cpp", "git"],
-    },
-    component: "Programare",
-  },
-  {
-    title: "Web Development",
-    tech: {
-      name: [
-        "HTML5",
-        "CSS",
-        "JavaScript",
-        "React",
-        "PHP",
-        "Laravel",
-        "C#",
-        ".NET",
-      ],
-      img: [
-        "html5",
-        "css3",
-        "javascript",
-        "react",
-        "php",
-        "laravel",
-        "c-sharp",
-        "net",
-      ],
-    },
-    component: "WebDev",
-  },
-  {
-    title: "Design",
-    tech: {
-      name: ["Photoshop,", "Illustrator", "Invision", "Miro", "Zeplin"],
-      img: ["photoshop", "illustrator", "invision", "miro", "zeplin"],
-    },
-    component: "Design",
-  },
-  {
-    title: "DevOps",
-    tech: {
-      name: ["Docker,", "Jenkins", "Ansible", "AWS", "Terraform"],
-      img: ["docker", "jenkins", "ansible", "aws", "terraform"],
-    },
-    component: "Devops",
-  },
-  {
-    title: "Skill-up",
-    tech: {
-      name: ["SQL,", "MySQL", "SCRUM", "Linux"],
-      img: ["sql", "mysql", "agile", "linux"],
-    },
-    component: "Skillup",
-  },
-  {
-    title: "Testare",
-    tech: {
-      name: ["Testare software,", "Selenium"],
-      img: ["testare", "selenium"],
-    },
-    component: "Testare",
-  },
-  {
-    title: "Alte Cursuri",
-    tech: {
-      name: ["Excel,"],
-      img: ["excel"],
-    },
-    component: "Altele",
-  },
-];
-
 export const Pregatire = () => {
   return (
     <Container>
-      <Pwhite transform="uppercase" align="left">
+      <Pwhite transform="uppercase" align="left" mb="1.6rem">
         Cursurile it school
       </Pwhite>
       <H2half>
@@ -108,7 +33,7 @@ export const Pregatire = () => {
       </Phalf>
       <PregatireContainer>
         <ImageWrapper>
-          <Alina />
+          <Alina src={images.alina} />
         </ImageWrapper>
         {tehnologii.map((tehnologie, index) => (
           <PregatireWrapper key={index}>

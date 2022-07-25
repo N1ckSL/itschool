@@ -8,9 +8,15 @@ export const Grid = styled.section`
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(2, 1fr);
+
+  @media (max-width: ${LAYOUT.BREAKPOINTS.SM}) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
 `;
 
 export const Column = styled.div`
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.8rem;
 `;

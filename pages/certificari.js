@@ -1,9 +1,5 @@
-import { LandingLayout } from "../components/Layout/LandingLayout";
+import { Layout } from "../components/Layout/Layout";
 
 export default function CertificariPage() {
-    return (
-        <LandingLayout>
-            
-        </LandingLayout>
-    )
+  return <Layout></Layout>;
 }

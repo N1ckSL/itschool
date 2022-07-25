@@ -2,7 +2,7 @@ import { Footer } from "../Footer/footer";
 import { HeaderNav } from "../Header/HeaderNav";
 import { Container, Header, HeaderWrappper, Main } from "./Layout.style";
 
-export const LandingLayout = ({children}) => {
+export const Layout = ({ children }) => {
   return (
     <Container>
       <Header>
@@ -10,9 +10,7 @@ export const LandingLayout = ({children}) => {
           <HeaderNav />
         </HeaderWrappper>
       </Header>
-      <Main>
-        {children}
-      </Main>
+      <Main>{children}</Main>
       <Footer />
     </Container>
   );

@@ -124,6 +124,9 @@ export const Title = styled.h1`
   font-size: 4.8rem;
   margin-bottom: 4.8rem;  //create spacer
   margin-top: 2.8rem;
+  font-weight: 500;
+  line-height: 1.21;
+
   @media (max-width: ${LAYOUT.BREAKPOINTS.MD}) {
     font-size: 3.6rem;
   }

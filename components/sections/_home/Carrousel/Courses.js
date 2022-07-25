@@ -16,7 +16,7 @@ export const Courses = () => {
   return (
     <Container>
       <CoursesIntro>
-        <Pwhite transform="uppercase" align="center">cursuri it cu certificare pentru incepatori</Pwhite>
+        <Pwhite transform="uppercase" align="center" mb="1.6rem;">cursuri it cu certificare pentru incepatori</Pwhite>
         <H2flat align="center">
           From zero to hero. Descoperă programele de pregătire IT School
         </H2flat>

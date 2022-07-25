@@ -4,7 +4,7 @@ import { images } from "../../../_imports";
 import styled from "styled-components";
 import { H2, P } from "../../../_UI/Typography/Title";
 
-export const Container = styled.div`
+export const Container = styled.section`
   position: relative;
   width: 100%;
   padding: 9.6rem 5rem;
@@ -23,7 +23,7 @@ export const Container = styled.div`
     &:before {
       background-image: url(${images.backgroundCourses});
       background-repeat: no-repeat;
-      background-position: top center;
+      background-position: center top;
       @media (min-width: 1400px) {
         background-size: cover;
       }
@@ -38,6 +38,10 @@ export const CoursesIntro = styled.div`
   width: 100%;
   max-width: 80rem;
   margin: auto;
+
+  @media (max-width: ${LAYOUT.BREAKPOINTS.SM}) {
+    padding: 9.6rem 0;
+  }
 `;
 
 export const Center = styled.div`
@@ -49,11 +53,8 @@ export const Center = styled.div`
 `;
 
 export const Pwhite = styled(P)`
-  ${({ align }) => align && `text-align: ${align}`};
-  ${({ transform }) => transform && `text-transform: ${transform}`};
   color: ${COLORS.oxfordBlue40};
-  margin-bottom: 1.6rem;
-  ${({ mb }) => mb && `margin-bottom: ${mb}`};
+  
 `;
 
 export const H2flat = styled(H2)`
